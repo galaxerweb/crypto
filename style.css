@@ -1,0 +1,236 @@
+* {
+   box-sizing: border-box;
+   font-family: "League Spartan", sans-serif;
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   overflow-y: hidden;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(0, 0, 0);
+}
+
+.header {
+   width: 100%;
+   height: 100px;
+   user-select: none;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   font-size: 40px;
+   font-family: "Chakra Petch", sans-serif;
+   border-bottom: 1px solid white;
+}
+
+.ontro {
+   width: 100%;
+   height: 100%;
+   z-index: 40;
+   position: absolute;
+   background: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box {
+   position: absolute;
+   z-index: 2;
+   background-color: black;
+   width: 600px;
+   height: 250px;
+   border: 1px solid green;
+}
+
+.text1 {
+   width: 100%;
+   height: 125px;
+   user-select: none;
+   display: flex;
+   justify-content: center;
+   font-size: 40px;
+   font-family: "Chakra Petch", sans-serif;
+   letter-spacing: 3px;
+   color: rgb(4, 190, 4);
+}
+.blinker {
+   animation: blinker 2s infinite;
+}
+@keyframes blinker {
+   0% {
+      opacity: 0;
+   }
+
+   24% {
+      opacity: 0;
+   }
+
+   25% {
+      opacity: 1;
+   }
+
+   49% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   74% {
+      opacity: 0;
+   }
+
+   75% {
+      opacity: 1;
+   }
+
+   99% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+   }
+
+}
+.fader {
+   transition: 2s;
+   opacity: 0;
+}
+
+.inputCodeCont {
+   width: 30%;
+   display: flex;
+   align-items: center;
+   float: left;
+   height: 100%;
+}
+.outputCodeCont {
+   width: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   float: left;
+   height: 100%;
+}
+.main {
+   position: relative;
+   height: calc(100% - 100px);
+}
+
+.boxic {
+   padding: 20px 10px;
+   height: 80%;
+   width: 50%;
+   border: 1px solid rgb(255, 255, 255);
+}
+.boxi2 {
+   padding: 20px 10px;
+   border: 1px solid rgb(255, 255, 255);
+   height: 80%;
+   width: 100%;
+}
+.custom-textarea {
+   width: 100%;
+   height: 400px;
+   padding: 10px;
+   font-size: 20px;
+   background-color: black;
+   color: green;
+   border: 2px solid rgb(255, 255, 255);
+   font-family: "Chakra Petch", sans-serif;
+   resize: none;
+   line-height: 1.5;
+}
+.custom-textarea1 {
+   width: 100%;
+   height: 220px;
+   padding: 10px;
+   font-size: 20px;
+   background-color: black;
+   color: green;
+   border: 2px solid rgb(255, 255, 255);
+   font-family: "Chakra Petch", sans-serif;
+   resize: none;
+   line-height: 1.5;
+}
+.custom-textarea2 {
+   width: 100%;
+   margin-top: 20px;
+   height: 80px;
+   padding: 10px;
+   font-size: 20px;
+   background-color: black;
+   color: green;
+   border: 2px solid rgb(255, 255, 255);
+   font-family: "Chakra Petch", sans-serif;
+   resize: none;
+   line-height: 1.5;
+}
+.button {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   user-select: none;
+   height: 50px;
+}
+.button1 {
+   background: none;
+   border: none;
+   user-select: none;
+   color: green;
+   text-decoration: underline;
+   width: 180px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+   font-size: 28px;
+}
+.button1:hover {
+   cursor:pointer;
+   color: rgb(0, 180, 0);
+}
+
+.text2 {
+   width: 100%;
+   height: 125px;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   font-size: 40px;
+   font-family: "Chakra Petch", sans-serif;
+   letter-spacing: 3px;
+   color: rgb(4, 190, 4);
+}
+.text3 {
+   width: 100%;
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   font-size: 40px;
+   font-family: "Chakra Petch", sans-serif;
+   letter-spacing: 3px;
+   color: rgb(4, 190, 4);
+}
+.iconka {
+   height: 100%;
+   display: flex;
+   width: 5%;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   float: left;
+}
+.material-icons {
+   font-size: 40px !important;
+   user-select: none;
+}
